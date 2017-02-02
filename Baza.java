@@ -20,6 +20,10 @@ public class Baza
     // Numerod e bazas jugadas en la partida.
     private int bazasJugadas;
 
+    private Carta cartaQueGana;
+    
+    private String jugadorQueVaGanando;
+
     /**
      * Constructor for objects of class Baza
      */
@@ -31,6 +35,7 @@ public class Baza
         baza = new Carta[numeroJugadores];
         bazasJugadas=0;
         nombreDeJugadores =new String [numeroJugadores];
+        cartaQueGana = null;
     }
 
     /**
@@ -40,16 +45,33 @@ public class Baza
     {
         if (cartasJugadas < baza.length){
             baza[cartasJugadas]=cartaJugada;
+
+            if (cartaQueGana == null){
+                cartaQueGana=cartaJugada;
+            }
+            else{
+                if (!cartaQueGana.ganaA(baza[cartasJugadas],triunfo)){
+                    cartaQueGana=baza[cartasJugadas];
+                }
+            }
+
             nombreDeJugadores[cartasJugadas]=nombreJugador;
             cartasJugadas++;
         }
     }
-    
+
     public int  getPaloPrimeraCartaDeLaBaza(){
         int paloPrimeraCarta = -1;
         if (baza[0]!= null){
             paloPrimeraCarta= baza[0].getPalo();
         }
         return paloPrimeraCarta;
+    }
+
+    public Carta cartaQueVaGanandoLaBaza(){
+        return cartaQueGana;
+    }
+    public String nombreJugadorQueVaGanandoLaBaza(){
+        return jugadorQueVaGanando;
     }
 }
