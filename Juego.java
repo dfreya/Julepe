@@ -8,9 +8,11 @@ import java.util.Random;
  */
 public class Juego
 {
-    // instance variables - replace the example below with your own
+    // Array que guarda el numero de jugadores que juegan 
     private Jugador[] numeroDeJugador;
+    // Parametro que guarda el maz con el que esta jugando;
     private Mazo barajaDeJuego;
+    //Parametro que guarda el palo que es triunfo de la partida
     private int palotriunfo;
 
     /**
@@ -78,7 +80,5 @@ public class Juego
             System.out.println(botPlayer.getNombre());
         }
     }
-    
-    
 }
 

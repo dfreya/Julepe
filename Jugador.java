@@ -7,9 +7,11 @@ import java.util.Random;
  */
 public class Jugador
 {
-    // instance variables - replace the example below with your own
+    // Nombre dek jugador
     private String nombre;
+    //Parametro que guarda el numero de cartas que PUEDE tener el jugador
     private Carta[] mano;
+    //Parametro que guarda el numero de cartas que TIENE el jugador.
     private int cartasDeMano;
 
     /**
