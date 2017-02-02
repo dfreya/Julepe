@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Mazo()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Mazo\r\n
+comment1.params=
+comment1.target=void\ verMazo()
+comment2.params=
+comment2.target=void\ barajar()
+comment3.params=
+comment3.target=Carta\ sacarCarta()
+numComments=4

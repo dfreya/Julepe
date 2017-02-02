@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=nick
+comment0.target=Jugador(java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Jugador\r\n
+comment1.params=carta
+comment1.target=void\ recibirCarta(Carta)
+comment1.text=\r\n\ \r\n
+comment2.params=
+comment2.target=void\ verMano()
+comment3.params=
+comment3.target=java.lang.String\ getNombre()
+comment4.params=cartaRequerida
+comment4.target=Carta\ tirarCarta(java.lang.String)
+comment5.params=
+comment5.target=Carta\ tirarCartaAleatoria()
+numComments=6
