@@ -43,7 +43,13 @@ public class Baza
             nombreDeJugadores[cartasJugadas]=nombreJugador;
             cartasJugadas++;
         }
-
-      
+    }
+    
+    public int  getPaloPrimeraCartaDeLaBaza(){
+        int paloPrimeraCarta = -1;
+        if (baza[0]!= null){
+            paloPrimeraCarta= baza[0].getPalo();
+        }
+        return paloPrimeraCarta;
     }
 }
