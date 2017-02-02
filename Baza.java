@@ -36,6 +36,7 @@ public class Baza
         bazasJugadas=0;
         nombreDeJugadores =new String [numeroJugadores];
         cartaQueGana = null;
+        jugadorQueVaGanando="";
     }
 
     /**
@@ -48,6 +49,7 @@ public class Baza
 
             if (cartaQueGana == null){
                 cartaQueGana=cartaJugada;
+                jugadorQueVaGanando= nombreJugador;
             }
             else{
                 if (!cartaQueGana.ganaA(baza[cartasJugadas],triunfo)){
