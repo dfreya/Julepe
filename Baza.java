@@ -52,6 +52,7 @@ public class Baza
             else{
                 if (!cartaQueGana.ganaA(baza[cartasJugadas],triunfo)){
                     cartaQueGana=baza[cartasJugadas];
+                    jugadorQueVaGanando= nombreJugador;
                 }
             }
 
