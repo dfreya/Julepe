@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=numeroJugadores\ palotriunfo
+comment0.target=Baza(int,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Baza\r\n
+comment1.params=cartaJugada\ nombreJugador
+comment1.target=void\ addCarta(Carta,\ java.lang.String)
+comment1.text=\r\n\ \r\n
+numComments=2

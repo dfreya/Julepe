@@ -13,6 +13,12 @@ public class Baza
     private int triunfo;
     //Numero de jugadores que estan jugando la baza;
     private int numeroJugadores;
+    //Array de los nombres de los jugadores que juegan.
+    private String [] nombreDeJugadores;
+    //Array de cartas de la baza.
+    private Carta[] baza;
+    // Numerod e bazas jugadas en la partida.
+    private int bazasJugadas;
 
     /**
      * Constructor for objects of class Baza
@@ -22,17 +28,22 @@ public class Baza
         // 
         cartasJugadas = 0;
         triunfo = palotriunfo;
+        baza = new Carta[numeroJugadores];
+        bazasJugadas=0;
+        nombreDeJugadores =new String [numeroJugadores];
     }
 
     /**
-     * An example of a method - replace this comment with your own
      * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
      */
-    public int sampleMethod(int y)
+    public void addCarta(Carta cartaJugada, String nombreJugador)
     {
-        // put your code here
-        return x + y;
+        if (cartasJugadas < baza.length){
+            baza[cartasJugadas]=cartaJugada;
+            nombreDeJugadores[cartasJugadas]=nombreJugador;
+            cartasJugadas++;
+        }
+
+      
     }
 }
